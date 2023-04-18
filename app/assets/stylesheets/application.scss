@@ -8,7 +8,6 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;1,300&family=Roboto+Mono:wght@500&display=swap");
 
-
 .container {
   margin: 0 auto;
   width: 70vw;
@@ -27,17 +26,18 @@
 }
 
 h1 {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 700;
   font-size: 2.7em;
 }
 
-h2, h3, a {
-  font-family: 'Roboto Mono', monospace;
+h2,
+a {
+  font-family: "Roboto Mono", monospace;
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: rgb(26, 23, 23);
 }
 
@@ -47,6 +47,7 @@ h2 {
 
 h3 {
   font-size: 1.4rem;
+  line-height: 2.5rem;
 }
 
 p {
