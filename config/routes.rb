@@ -4,12 +4,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'pages#home'
-
-  resources :pages, only: :about
+  get 'about', to: 'pages#about'
+  get 'cv', to: 'pages#cv'
 
   # Add CRUDs
   resources :skills, only: :index
 
   # Add CRUDs (for rich text management) after core pages are complete
-  resources :projects, only: %i[index show]
+  resources :projects, only: :index
+  resources :projects, param: :title, only: [:show]
 end
