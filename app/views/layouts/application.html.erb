@@ -12,9 +12,19 @@
   </head>
 
   <body>
-    <%= render "components/navbar" %>
+    <%# Navbar %>
+    <% unless current_page?(cv_path) %>
+      <%= render "components/navbar" %>
+    <% end %>
+
+    <%# Flash Alerts %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+
+    <%# Floating Bars %>
+    <% unless current_page?(cv_path) %>
+      <%= render "components/floating_sidebar" %>
+    <% end %>
 
     <%= yield %>
   </body>

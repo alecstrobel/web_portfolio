@@ -1,6 +1,6 @@
 <nav class="relative flex flex-wrap items-center justify-between px-2 py-4 mb-3">
 
-  <div class="container mx-auto flex flex-wrap items-center justify-between px-3" data-controller="navbar" data-action="mouseout->navbar#hideLine">
+  <div class="container mx-auto flex flex-wrap items-center justify-between px-3 pt-3" data-controller="navbar" data-action="mouseout->navbar#hideLine">
 
     <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start" data-action="mouseover->navbar#showLine">
       <%= link_to root_path, class: "leading-relaxed inline-block py-2 whitespace-nowrap" do %>
@@ -13,16 +13,13 @@
 
       <ul class="flex flex-col lg:flex-row list-none ml-auto">
         <li class="nav-item">
-          <%= link_to "about", "#", class: "px-3 py-2 flex items-center text-xs font-bold leading-snug hover:text-[#d98526]" %>
+          <%= link_to "about", about_path, class: "px-3 py-2 flex items-center text-xs font-bold leading-snug hover:text-[#d98526]" %>
         </li>
         <li class="nav-item">
-          <%= link_to "skills", "#", class: "px-3 py-2 flex items-center text-xs font-bold leading-snug hover:text-[#d98526]" %>
+          <%= link_to "skills", skills_path, class: "px-3 py-2 flex items-center text-xs font-bold leading-snug hover:text-[#d98526]" %>
         </li>
         <li class="nav-item">
-          <%= link_to "work", "#", class: "px-3 py-2 flex items-center text-xs font-bold leading-snug hover:text-[#d98526]" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "fun", "#", class: "px-3 py-2 flex items-center text-xs font-bold leading-snug hover:text-[#d98526]" %>
+          <%= link_to "projects", projects_path, class: "px-3 py-2 flex items-center text-xs font-bold leading-snug hover:text-[#d98526]" %>
         </li>
         <li class="nav-item">
           <%= link_to "connect", "#", class: "px-3 py-2 flex items-center text-xs font-bold leading-snug hover:text-[#d98526]" %>

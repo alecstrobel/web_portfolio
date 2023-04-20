@@ -1,13 +1,10 @@
-<%# Floating bars %>
-<%= render "components/floating_sidebar" %>
-
 <div class="container relative">
 
   <%# Hero Section %>
   <div class="w-full h-screen flex items-center justify-center">
     <div class="mt-8">
       <h1 class="mb-6">Hi 👋 I'm a creative problem solver with a passion for product design. I love design that solves real challenges of people and  businesses.</h1>
-      <a href="#" class="click-me hover:opacity-75">Check out my resume →</a>
+      <%= link_to "Check out my resume →", cv_path, class: "click-me hover:opacity-75", target: "_blank" %>
     </div>
   </div>
 
@@ -20,7 +17,7 @@
       </div>
       <div class="w-2/3 pl-10">
         <h3 class="mt-8 mb-5">I have experience in delivering end-to-end UX & UI designs for software products. My mission is to improve the lives of others through beautiful design solutions that solve real challenges of both people and businesses.</h3>
-        <a href="#" class="click-me hover:opacity-75">About me →</a>
+        <%= link_to "More about me →", about_path, class: "click-me hover:opacity-75" %>
       </div>
     </div>
 
@@ -45,35 +42,55 @@
   </div>
 
   <%# Project Section %>
-  <div class="mb-32">
+  <div class="mb-44">
 
     <div class="flex gap-4 mb-32">
       <div class="flex items-center justify-center w-2/4">
-        <%= image_tag "MemriPortfolio" %>
+        <%= image_tag @projects[0].thumbnail, class: "rounded-3xl" %>
       </div>
       <div class="w-2/4 pl-10">
-        <h2 class="mt-40 mb-5">Designing solutions for the challenges of learning & studying.</h2>
-        <a href="#" class="click-me hover:opacity-75">Read more →</a>
+        <h2 class="mt-40 mb-5"><%= @projects[0].sub_title %></h2>
+        <%= link_to "Read more →", project_path(@projects[0].title), class: "click-me hover:opacity-75" %>
       </div>
     </div>
 
     <div class="flex gap-4 mb-32">
       <div class="w-2/4 pr-8">
-        <h2 class="mt-40 mb-5">Designing experiences to disrupt a market.</h2>
-        <a href="#" class="click-me hover:opacity-75">Read more →</a>
+        <h2 class="mt-40 mb-5"><%= @projects[1].sub_title %></h2>
+        <%= link_to "Read more →", project_path(@projects[1].title), class: "click-me hover:opacity-75" %>
       </div>
       <div class="flex items-center justify-center w-2/4">
-        <%= image_tag "BravePortfolioMockup" %>
+        <%= image_tag @projects[1].thumbnail, class: "rounded-3xl" %>
       </div>
     </div>
 
     <div class="flex gap-4 mb-32">
       <div class="flex items-center justify-center w-2/4">
-        <%= image_tag "PortfolioImage" %>
+        <%= image_tag @projects[2].thumbnail, class: "rounded-3xl" %>
       </div>
       <div class="w-2/4 pl-10">
-        <h2 class="mt-40 mb-5">Creating enjoyable experiences in a booming market.</h2>
-        <a href="#" class="click-me hover:opacity-75">Read more →</a>
+        <h2 class="mt-40 mb-5"><%= @projects[2].sub_title %></h2>
+        <%= link_to "Read more →", project_path(@projects[2].title), class: "click-me hover:opacity-75" %>
+      </div>
+    </div>
+
+    <div class="flex gap-4 mb-32">
+      <div class="w-2/4 pr-8">
+        <h2 class="mt-40 mb-5"><%= @projects[3].sub_title %></h2>
+        <%= link_to "Read more →", project_path(@projects[3].title), class: "click-me hover:opacity-75" %>
+      </div>
+      <div class="flex items-center justify-center w-2/4">
+        <%= image_tag @projects[3].thumbnail, class: "rounded-3xl" %>
+      </div>
+    </div>
+
+    <div class="flex gap-4 mb-32">
+      <div class="flex items-center justify-center w-2/4">
+        <%= image_tag @projects[4].thumbnail, class: "rounded-3xl" %>
+      </div>
+      <div class="w-2/4 pl-10">
+        <h2 class="mt-40 mb-5"><%= @projects[4].sub_title %></h2>
+        <%= link_to "Read more →", project_path(@projects[4].title), class: "click-me hover:opacity-75" %>
       </div>
     </div>
 
@@ -82,8 +99,8 @@
   <%# Quote Section %>
   <div class="mb-32">
 
-    <div class="quote">
-      <h2>Design can help to improve our lives in the present. Design thinking can help us chart a path into the future.</h2>
+    <div>
+      <h2 class="mb-3">Design can help to improve our lives in the present. Design thinking can help us chart a path into the future.</h2>
       <p>- Tim Brown</p>
     </div>
 
