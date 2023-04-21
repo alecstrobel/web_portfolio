@@ -80,6 +80,3 @@ gem "tailwindcss-rails", "~> 2.0"
 
 # SVGs
 gem "inline_svg"
-
-# PDFs
-gem "prawn", "~> 2.4"
