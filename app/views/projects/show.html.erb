@@ -84,6 +84,9 @@
   <div>
     <h2 class="mb-3">Outcome</h2>
     <h4 class="text-xl leading-8"><%= @project.content[1] %></h4>
+    <% if @project.link %>
+    <h4 class="text-xl mt-8"><%= link_to "Check out the project here → ", @project.link, class: "click-me hover:opacity-75" %></h4>
+    <% end %>
   </div>
 
   <div class="my-12 lg:my-20">
