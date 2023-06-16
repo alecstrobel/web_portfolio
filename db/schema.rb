@@ -25,7 +25,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_03_142757) do
     t.string "images", default: [], array: true
     t.string "details", default: [], array: true
     t.string "tools", default: [], array: true
-    t.string "link"
+    t.text "link", default: [], array: true
   end
 
   create_table "skills", force: :cascade do |t|

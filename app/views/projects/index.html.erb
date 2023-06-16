@@ -5,25 +5,29 @@
 
     <div class="lg:flex lg:gap-4 mb-20 lg:mb-32">
       <div class="flex flex-col lg:flex-row items-center justify-center w-full lg:w-2/4">
-        <%= link_to @projects[0].title do %>
+        <%= link_to project_path(@projects[0].title) do %>
           <%= image_tag @projects[0].thumbnail, class: "rounded-3xl" %>
         <% end %>
       </div>
-      <div class="w-full pl-5 lg:w-2/4 lg:pl-10">
-        <h2 class="mt-8 md:mt-14 lg:mt-20 xl:mt-32 mb-5"><%= @projects[0].sub_title %></h2>
-        <%= link_to "Read more →", project_path(@projects[0].title), class: "click-me hover:opacity-75" %>
+      <div class="flex flex-col h-full w-full pl-5 lg:w-2/4 lg:pl-10 justify-center items-center">
+        <div>
+          <h2 class="mt-8 mb-5"><%= @projects[0].sub_title %></h2>
+          <%= link_to "Read more →", project_path(@projects[0].title), class: "click-me hover:opacity-75" %>
+        </div>
       </div>
     </div>
 
     <div class="lg:flex lg:gap-4 mb-20 lg:mb-32">
       <div class="order-2 flex flex-col lg:flex-row items-center justify-center w-full lg:w-2/4">
-        <%= link_to @projects[1].title do %>
+        <%= link_to project_path(@projects[1].title) do %>
           <%= image_tag @projects[1].thumbnail, class: "rounded-3xl" %>
         <% end %>
       </div>
-      <div class="order-1 w-full pl-5 lg:w-2/4 lg:pl-10">
-        <h2 class="mt-8 md:mt-14 lg:mt-20 xl:mt-32 mb-5"><%= @projects[1].sub_title %></h2>
-        <%= link_to "Read more →", project_path(@projects[1].title), class: "click-me hover:opacity-75" %>
+      <div class="flex flex-col order-1 w-full pl-5 lg:w-2/4 lg:pl-10 justify-center items-center">
+        <div>
+          <h2 class="mt-8 mb-5"><%= @projects[1].sub_title %></h2>
+          <%= link_to "Read more →", project_path(@projects[1].title), class: "click-me hover:opacity-75" %>
+        </div>
       </div>
     </div>
 
@@ -33,9 +37,11 @@
           <%= image_tag @projects[2].thumbnail, class: "rounded-3xl" %>
         <% end %>
       </div>
-      <div class="w-full pl-5 lg:w-2/4 lg:pl-10">
-        <h2 class="mt-8 md:mt-14 lg:mt-20 xl:mt-32 mb-5"><%= @projects[2].sub_title %></h2>
-        <%= link_to "Read more →", project_path(@projects[2].title), class: "click-me hover:opacity-75" %>
+      <div class="flex flex-col h-full w-full pl-5 lg:w-2/4 lg:pl-10 justify-center items-center">
+        <div>
+          <h2 class="mt-8 mb-5"><%= @projects[2].sub_title %></h2>
+          <%= link_to "Read more →", project_path(@projects[2].title), class: "click-me hover:opacity-75" %>
+        </div>
       </div>
     </div>
 
@@ -45,9 +51,11 @@
           <%= image_tag @projects[3].thumbnail, class: "rounded-3xl" %>
         <% end %>
       </div>
-      <div class="order-1 w-full pl-5 lg:w-2/4 lg:pl-10">
-        <h2 class="mt-8 md:mt-14 lg:mt-20 xl:mt-32 mb-5"><%= @projects[3].sub_title %></h2>
-        <%= link_to "Read more →", project_path(@projects[3].title), class: "click-me hover:opacity-75" %>
+      <div class="flex flex-col order-1 w-full pl-5 lg:w-2/4 lg:pl-10 justify-center items-center">
+        <div>
+          <h2 class="mt-8 mb-5"><%= @projects[3].sub_title %></h2>
+          <%= link_to "Read more →", project_path(@projects[3].title), class: "click-me hover:opacity-75" %>
+        </div>
       </div>
     </div>
 
@@ -57,9 +65,11 @@
           <%= image_tag @projects[4].thumbnail, class: "rounded-3xl" %>
         <% end %>
       </div>
-      <div class="w-full pl-5 lg:w-2/4 lg:pl-10">
-        <h2 class="mt-8 md:mt-14 lg:mt-20 xl:mt-32 mb-5"><%= @projects[4].sub_title %></h2>
-        <%= link_to "Read more →", project_path(@projects[4].title), class: "click-me hover:opacity-75" %>
+      <div class="flex flex-col h-full w-full pl-5 lg:w-2/4 lg:pl-10 justify-center items-center">
+        <div>
+          <h2 class="mt-8 mb-5"><%= @projects[4].sub_title %></h2>
+          <%= link_to "Read more →", project_path(@projects[4].title), class: "click-me hover:opacity-75" %>
+        </div>
       </div>
     </div>
 

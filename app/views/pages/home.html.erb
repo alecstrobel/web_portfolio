@@ -1,4 +1,4 @@
-<div class="mx-6 container relative">
+<div class="mx-6 container 2xl:max-w-screen-2xl relative">
 
   <%# Hero Section %>
   <div class="w-full lg:h-screen flex justify-center mb-28 mt-32 lg:mb-0 lg:mt-0 lg:items-center">
@@ -15,9 +15,11 @@
       <div class="flex items-center justify-center w-full sm:w-2/4 md:w-1/3">
         <%= image_tag "portrait.png", class: "rounded-3xl" %>
       </div>
-      <div class="w-11/12 sm:w-2/4 md:w-2/3 pl-3 md:pl-5 lg:pl-10 lg:pt-24">
-        <h3 class="mt-4 md:mt-3 mb-4 xl:my-8">I have experience in delivering end-to-end designs and web app products, currently learning to develop native apps too. I want to improve the lives of others through elegant solutions that solve real challenges of both people and businesses.</h3>
-        <%= link_to "More about me →", about_path, class: "click-me hover:opacity-75" %>
+      <div class="flex flex-col h-full w-11/12 sm:w-2/4 md:w-2/3 pl-3 md:pl-5 lg:pl-10 justify-center items-center">
+        <div>
+          <h3 class="mt-4 md:mt-3 mb-4 xl:my-8">I'm a software developer with a background in design. I have experience in designing and developing end-to-end web app and native app products. My dream is to improve the lives of others through elegant solutions that solve real challenges of both people and businesses.</h3>
+          <%= link_to "More about me →", about_path, class: "click-me hover:opacity-75" %>
+        </div>
       </div>
     </div>
 
@@ -48,9 +50,11 @@
           <%= image_tag @projects[0].thumbnail, class: "rounded-3xl" %>
         <% end %>
       </div>
-      <div class="w-full pl-5 lg:w-2/4 lg:pl-10">
-        <h2 class="mt-8 md:mt-14 lg:mt-20 xl:mt-32 2xl:mt-64 mb-5"><%= @projects[0].sub_title %></h2>
-        <%= link_to "Read more →", project_path(@projects[0].title), class: "click-me hover:opacity-75" %>
+      <div class="flex flex-col h-full w-full pl-5 lg:w-2/4 lg:pl-10 justify-center items-center">
+        <div>
+          <h2 class="mt-8 mb-5"><%= @projects[0].sub_title %></h2>
+          <%= link_to "Read more →", project_path(@projects[0].title), class: "click-me hover:opacity-75" %>
+        </div>
       </div>
     </div>
 
@@ -60,9 +64,11 @@
           <%= image_tag @projects[1].thumbnail, class: "rounded-3xl" %>
         <% end %>
       </div>
-      <div class="order-1 w-full pl-5 lg:w-2/4 lg:pl-10">
-        <h2 class="mt-8 md:mt-14 lg:mt-20 xl:mt-32 2xl:mt-64 mb-5"><%= @projects[1].sub_title %></h2>
-        <%= link_to "Read more →", project_path(@projects[1].title), class: "click-me hover:opacity-75" %>
+      <div class="flex flex-col order-1 w-full pl-5 lg:w-2/4 lg:pl-10 justify-center items-center">
+        <div>
+          <h2 class="mt-8 mb-5"><%= @projects[1].sub_title %></h2>
+          <%= link_to "Read more →", project_path(@projects[1].title), class: "click-me hover:opacity-75" %>
+        </div>
       </div>
     </div>
 
@@ -72,9 +78,11 @@
           <%= image_tag @projects[2].thumbnail, class: "rounded-3xl" %>
         <% end %>
       </div>
-      <div class="w-full pl-5 lg:w-2/4 lg:pl-10">
-        <h2 class="mt-8 md:mt-14 lg:mt-20 xl:mt-32 2xl:mt-64 mb-5"><%= @projects[2].sub_title %></h2>
-        <%= link_to "Read more →", project_path(@projects[2].title), class: "click-me hover:opacity-75" %>
+      <div class="flex flex-col h-full w-full pl-5 lg:w-2/4 lg:pl-10 justify-center items-center">
+        <div>
+          <h2 class="mt-8 mb-5"><%= @projects[2].sub_title %></h2>
+          <%= link_to "Read more →", project_path(@projects[2].title), class: "click-me hover:opacity-75" %>
+        </div>
       </div>
     </div>
 
@@ -84,9 +92,11 @@
           <%= image_tag @projects[3].thumbnail, class: "rounded-3xl" %>
         <% end %>
       </div>
-      <div class="order-1 w-full pl-5 lg:w-2/4 lg:pl-10">
-        <h2 class="mt-8 md:mt-14 lg:mt-20 xl:mt-32 2xl:mt-64 mb-5"><%= @projects[3].sub_title %></h2>
-        <%= link_to "Read more →", project_path(@projects[3].title), class: "click-me hover:opacity-75" %>
+      <div class="flex flex-col order-1 w-full pl-5 lg:w-2/4 lg:pl-10 justify-center items-center">
+        <div>
+          <h2 class="mt-8 mb-5"><%= @projects[3].sub_title %></h2>
+          <%= link_to "Read more →", project_path(@projects[3].title), class: "click-me hover:opacity-75" %>
+        </div>
       </div>
     </div>
 
@@ -96,9 +106,11 @@
           <%= image_tag @projects[4].thumbnail, class: "rounded-3xl" %>
         <% end %>
       </div>
-      <div class="w-full pl-5 lg:w-2/4 lg:pl-10">
-        <h2 class="mt-8 md:mt-14 lg:mt-20 xl:mt-32 2xl:mt-64 mb-5"><%= @projects[4].sub_title %></h2>
-        <%= link_to "Read more →", project_path(@projects[4].title), class: "click-me hover:opacity-75" %>
+      <div class="flex flex-col h-full w-full pl-5 lg:w-2/4 lg:pl-10 justify-center items-center">
+        <div>
+          <h2 class="mt-8 mb-5"><%= @projects[4].sub_title %></h2>
+          <%= link_to "Read more →", project_path(@projects[4].title), class: "click-me hover:opacity-75" %>
+        </div>
       </div>
     </div>
 
@@ -121,9 +133,11 @@
       <div class="order-2 flex items-center justify-center w-full md:w-1/3">
         <%= image_tag "lines/donuts.svg", class: "rounded-3xl" %>
       </div>
-      <div class="order-1 w-full md:w-2/3 mt-10 md:mt-5 md:pr-10">
-        <h3 class="mt-8 mb-5">I'm a software developer with a background in design aspiring to become a great developer with Ruby and Javascript as my foundation. I'm fascinated by the intersection of design and technology and how they can be used to solve meaningful challenges.</h3>
-        <%= link_to "Skills overview →", skills_path, class: "click-me hover:opacity-75" %>
+      <div class="flex flex-col order-1 w-full md:w-2/3 md:pr-10 justify-center items-center">
+        <div>
+          <h3 class="mt-8 mb-5">I'm aspiring to become a great developer with Ruby and Javascript as my foundation, but I'm eager to expand my skillset. I'm fascinated by the intersection of design and technology and how they can be used to solve meaningful challenges.</h3>
+          <%= link_to "Skills overview →", skills_path, class: "click-me hover:opacity-75" %>
+        </div>
       </div>
 
     </div>

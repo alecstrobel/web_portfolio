@@ -15,11 +15,12 @@ admin = User.new(email: 'contact@alecstrobel.tech', password: '123456')
 admin.save!
 
 #  Skills
-Skill.create(topics: ['Full-Stack Development', 'Backend Development', 'Frontend Development'], languages: ['HTML', 'CSS', 'Javascript', 'Ruby', 'SQL', 'Bash'], tools: ['Ruby on Rails', 'PostgreSQL', 'React Native', 'Stimulus', 'AJAX', 'Sidekiq', 'Bootstrap', 'Tailwind', 'Sass', 'Webpack', 'Yarn', 'npm', 'Git', 'Github', 'Heroku'])
+Skill.create(topics: ['Full-Stack Development', 'Backend Development', 'Frontend Development'], languages: ['HTML', 'CSS', 'Javascript', 'Ruby', 'SQL', 'Bash'], tools: ['Ruby on Rails', 'React Native', 'PostgreSQL', 'Redux', 'Redux Persist', 'REST APIs', 'Stimulus', 'AJAX', 'Sidekiq', 'Bootstrap', 'Tailwind', 'Sass', 'Webpack', 'Yarn', 'npm', 'Git', 'Github', 'Heroku'])
 
 Skill.create(topics: ['Human Centred Design', 'Design Thinking', 'User Experience Design', 'Service Design', 'Problem Solving', 'Ideation'], tools: ['Figma', 'Sketch', 'Adobe XD', 'Zeplin', 'Adobe Illustrator', 'Adobe Photoshop', 'Miro', 'Lookback'])
 
 # Projects
+katakumba = Project.create(title: 'Katakumba', sub_title: 'Developing a mobile POS app for a club and events venue.', thumbnail: 'projects/KataThumbnail.png')
 collevio = Project.create(title: 'Collevio', sub_title: 'Developing a parent-teacher child care management web app.', thumbnail: 'projects/CollevioThumbnail.png')
 nuespace = Project.create(title: 'Nuespace', sub_title: 'Coding an airbnb clone marketplace for renting event spaces.', thumbnail: 'projects/NuespaceThumbnail.png')
 memri = Project.create(title: 'Memri', sub_title: 'Designing solutions for the challenges of learning & studying.', thumbnail: 'projects/MemriThumbnail.png')
@@ -27,6 +28,7 @@ brave = Project.create(title: 'Brave', sub_title: 'Designing experiences to disr
 barmaster = Project.create(title: 'Barmaster', sub_title: 'Creating enjoyable experiences in a booming market.', thumbnail: 'projects/BarmasterThumbnail.png')
 
 # Project Details
+katakumba.details = ['Full-Stack Developer', 'Backend Developer', 'Frontend Developer']
 collevio.details = ['Full-Stack Developer', 'Backend Developer', 'Frontend Developer']
 nuespace.details = ['Full-Stack Developer', 'Backend Developer', 'Frontend Developer']
 memri.details = ['UX Designer', 'Service Designer', 'Human-Centred Design', 'User Research', 'UI / UX Design', 'Usability Testing']
@@ -34,6 +36,7 @@ brave.details = ['Product Strategist', 'Product Designer', 'Design Thinking', 'S
 barmaster.details = ['UX Designer', 'Design Thinking', 'UX Research', 'UI / UX Design', 'Usability Testing']
 
 # Project Tools
+katakumba.tools = ['HTML', 'CSS', 'Ruby on Rails', 'Javascript', 'React Native', 'Redux', 'Redux Persist', 'REST APIs', 'Devise', 'Doorkeeper', 'Pundit', 'Stimulus', 'Sidekiq', 'Tailwind', 'Sass', 'Webpack', 'Yarn', 'npm', 'Expo', 'Git', 'Github', 'Heroku', 'Digital Ocean']
 collevio.tools = ['HTML', 'CSS', 'Ruby on Rails', 'Javascript', 'Stimulus', 'Devise', 'AJAX', 'Chart.JS', 'Sass', 'Webpack', 'Yarn', 'Git', 'Github', 'Heroku']
 nuespace.tools = ['HTML', 'CSS', 'Ruby on Rails', 'Javascript', 'Stimulus', 'Devise', 'Bootstrap', 'Sass', 'Webpack', 'Yarn', 'Git', 'Github', 'Heroku']
 memri.tools = ['Figma', 'Miro', 'Zeplin']
@@ -41,6 +44,8 @@ brave.tools = ['Figma', 'Miro', 'Miro', 'Lookback', 'Expoze.io', 'Adobe Illustra
 barmaster.tools = ['Figma', 'Zeplin', 'Lookback']
 
 # Project Content
+katakumba.content = ["For the Katakumba club and events venue, I was tasked with developing an end-to-end point of sale application that would enhance the customer experience during payment transactions. The primary goal was to create a user-friendly payment interface for employees to handle payments at bars and other customer-facing scenarios. The application also needed to be easily manageable post-development. Additionally, an offline capability was required to accommodate areas within the venue with no network connection. The client already had a preferred payment system, so no payment API integration was necessary.", "Over a span of two months, I designed and developed the project. To meet the requirements, I utilized Ruby on Rails for the backend API and created an admin management web app platform. For the point of sale functionality, I built a nested React Native application specifically tailored for tablets. Backend authentication was implemented using the Devise gem and Doorkeeper for authentication tokens. Pundit was used for authorization in the web app, ensuring that only admins could manage settings and accounts. To enable offline functionality, I implemented API requests as background tasks and utilized Redux Persist with asyncStorage to persist data and manage states even when the app was closed or the device restarted.", "This project provided an opportunity for me to learn and successfully implement React Native, expanding my skill set. It was a rewarding experience to acquire new skills and apply them to a real-world project. I gained valuable insights into working with APIs and state management libraries. Going forward, I am excited to continue utilizing Ruby, JavaScript, Rails, and React to develop exceptional products."]
+
 collevio.content = ["Collevio is a parent-teacher child care management web app that was developed by a team of 4 developers over 9 days, concluding the Le Wagon Web Development Bootcamp. The app allows parents to receive and keep up-to-date information about their children's daycare experiences in real-time. Teachers can easily upload information about the child, which is accessible to the parents through the dashboard overview. The app also includes a chatroom for the child, a photo album page, an activities page with charts and other visuals, and a calendar with upcoming events and scheduled meetings.", "Our team successfully completed the MVP version of Collevio within the 9-day timeframe, implementing various features and functionalities from backend to frontend. The app comprises a fully functional Ruby on Rails backend and a user-friendly frontend developed with CSS, Bootstrap, and Sass. We incorporated various JS features and effects using JS Stimulus controllers, as well as charts using ChartJS and live chat functionality using AJAX and Action Cable. In addition, the app utilises various Ruby on Rails gems, including real-time notifications with the Noticed gem, photo storage using Cloudinary, and user authentication with Devise. Overall, the development of Collevio showcases a culmination of everything we learned throughout the Le Wagon Bootcamp, putting in practice various languages, technologies, and tools to create a seamless user experience.", "While my team successfully followed the MVC model, we faced challenges during the hectic development process due to a lack of organisation in breaking down code and UI into components. This experience showed me the value of implementing clean coding practices in future projects for better collaboration and streamlined development."]
 
 nuespace.content = ["Nuespace is a web app developed by a team of 4 developers during the Le Wagon Bootcamp. The app is an Airbnb-like marketplace that enables users to rent and rent out cafes or restaurants as small event spaces. It features a listings page with a map displaying the available spaces' locations, along with show pages for individual spaces. The web app implements all CRUD actions for users who offer event spaces and provides a user dashboard for viewing reservations, uploaded spaces, and booking details.", "Nuespace was successfully completed with a ruby on rails backend and frontend using CSS, Bootstrap, and Sass. The map was implemented using the Mapbox Geocoding API. The search feature was implemented with Active Record, the PG Search gem, and the Mapbox Geocoding Autocomplete API. User authentication was accomplished with the Devise gem. The development process of this app was a key part of the Le Wagon learning process as we gained hands-on experience in implementing CRUD actions and integrating APIs and gems to create a functional web application.", "This project truly helped me understand and visualise the structure of web applications using the MVC model in practice. It was an opportunity to connect all the backend parts of the application, from the database to the controllers and views. A monumental moment and a really enjoyable experience."]
@@ -58,6 +63,7 @@ barmaster.content = ["The COVID pandemic triggered a rise in home bartending, le
 
 
 # Project Images
+katakumba.images = ['project_content/Katakumba1', 'project_content/Katakumba2', 'project_content/Katakumba3', 'project_content/Katakumba4']
 collevio.images = ['project_content/CollevioImg1', 'project_content/CollevioImg2', 'project_content/CollevioImg3', 'project_content/CollevioImg4']
 nuespace.images = ['project_content/NuespaceImg1', 'project_content/NuespaceImg2', 'project_content/NuespaceImg3', 'project_content/NuespaceImg4']
 memri.images = ['project_content/MemriImg1', 'project_content/MemriImg2', 'project_content/MemriImg3', 'project_content/MemriImg4']
@@ -65,12 +71,14 @@ brave.images = ['project_content/BraveImg1', 'project_content/BraveImg2', 'proje
 barmaster.images = ['project_content/BarmasterImg1', 'project_content/BarmasterImg2', 'project_content/BarmasterImg3', 'project_content/BarmasterImg4']
 
 # Project Links
-collevio.link = 'https://github.com/vivian423/Collevio'
-nuespace.link = 'https://github.com/vivian423/nuespace'
-memri.link = 'https://www.figma.com/proto/BQa72tyfDyQela9RpBOgbp/memri-app?page-id=0%3A1&node-id=57-2683&viewport=275%2C362%2C0.06&scaling=scale-down&starting-point-node-id=57%3A2683'
-barmaster.link = 'https://www.figma.com/proto/kRQfabIrgG8S15pLqdvwEU/BarMaster---Home-Bartending-App?page-id=0%3A1&node-id=55-1065&viewport=386%2C282%2C0.14&scaling=scale-down&starting-point-node-id=55%3A1065&show-proto-sidebar=1'
+katakumba.link = ['https://www.figma.com/proto/wlhO5hkJSAffWQpQ0I5eRZ/Design-Stage-1?page-id=0%3A1&node-id=10-85&starting-point-node-id=10%3A85']
+collevio.link = ['https://github.com/vivian423/Collevio']
+nuespace.link = ['https://github.com/vivian423/nuespace']
+memri.link = ['https://www.figma.com/proto/BQa72tyfDyQela9RpBOgbp/memri-app?page-id=0%3A1&node-id=57-2683&viewport=275%2C362%2C0.06&scaling=scale-down&starting-point-node-id=57%3A2683']
+barmaster.link = ['https://www.figma.com/proto/kRQfabIrgG8S15pLqdvwEU/BarMaster---Home-Bartending-App?page-id=0%3A1&node-id=55-1065&viewport=386%2C282%2C0.14&scaling=scale-down&starting-point-node-id=55%3A1065&show-proto-sidebar=1']
 
 # Save Project Data
+katakumba.save
 collevio.save
 nuespace.save
 memri.save
