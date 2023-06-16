@@ -15,7 +15,7 @@
       <div class="flex items-center justify-center w-full sm:w-2/4 md:w-1/3">
         <%= image_tag "portrait.png", class: "rounded-3xl" %>
       </div>
-      <div class="flex flex-col h-full w-11/12 sm:w-2/4 md:w-2/3 pl-3 md:pl-5 lg:pl-10 justify-center items-center">
+      <div class="flex flex-col w-11/12 sm:w-2/4 md:w-2/3 pl-3 md:pl-5 lg:pl-10 justify-center items-center">
         <div>
           <h3 class="mt-4 md:mt-3 mb-4 xl:my-8">I'm a software developer with a background in design. I have experience in designing and developing end-to-end web app and native app products. My dream is to improve the lives of others through elegant solutions that solve real challenges of both people and businesses.</h3>
           <%= link_to "More about me →", about_path, class: "click-me hover:opacity-75" %>
@@ -50,7 +50,7 @@
           <%= image_tag @projects[0].thumbnail, class: "rounded-3xl" %>
         <% end %>
       </div>
-      <div class="flex flex-col h-full w-full pl-5 lg:w-2/4 lg:pl-10 justify-center items-center">
+      <div class="flex flex-col w-full pl-5 lg:w-2/4 lg:pl-10 justify-center items-center">
         <div>
           <h2 class="mt-8 mb-4"><%= @projects[0].sub_title %></h2>
           <%= link_to "Read more →", project_path(@projects[0].title), class: "click-me hover:opacity-75" %>
@@ -78,7 +78,7 @@
           <%= image_tag @projects[2].thumbnail, class: "rounded-3xl" %>
         <% end %>
       </div>
-      <div class="flex flex-col h-full w-full pl-5 lg:w-2/4 lg:pl-10 justify-center items-center">
+      <div class="flex flex-col w-full pl-5 lg:w-2/4 lg:pl-10 justify-center items-center">
         <div>
           <h2 class="mt-8 mb-4"><%= @projects[2].sub_title %></h2>
           <%= link_to "Read more →", project_path(@projects[2].title), class: "click-me hover:opacity-75" %>
@@ -106,7 +106,7 @@
           <%= image_tag @projects[4].thumbnail, class: "rounded-3xl" %>
         <% end %>
       </div>
-      <div class="flex flex-col h-full w-full pl-5 lg:w-2/4 lg:pl-10 justify-center items-center">
+      <div class="flex flex-col w-full pl-5 lg:w-2/4 lg:pl-10 justify-center items-center">
         <div>
           <h2 class="mt-8 mb-4"><%= @projects[4].sub_title %></h2>
           <%= link_to "Read more →", project_path(@projects[4].title), class: "click-me hover:opacity-75" %>
