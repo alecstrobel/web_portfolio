@@ -71,11 +71,11 @@ brave.images = ['project_content/BraveImg1', 'project_content/BraveImg2', 'proje
 barmaster.images = ['project_content/BarmasterImg1', 'project_content/BarmasterImg2', 'project_content/BarmasterImg3', 'project_content/BarmasterImg4']
 
 # Project Links
-katakumba.link = ['https://www.figma.com/proto/wlhO5hkJSAffWQpQ0I5eRZ/Design-Stage-1?page-id=0%3A1&node-id=10-85&starting-point-node-id=10%3A85']
-collevio.link = ['https://github.com/vivian423/Collevio']
-nuespace.link = ['https://github.com/vivian423/nuespace']
-memri.link = ['https://www.figma.com/proto/BQa72tyfDyQela9RpBOgbp/memri-app?page-id=0%3A1&node-id=57-2683&viewport=275%2C362%2C0.06&scaling=scale-down&starting-point-node-id=57%3A2683']
-barmaster.link = ['https://www.figma.com/proto/kRQfabIrgG8S15pLqdvwEU/BarMaster---Home-Bartending-App?page-id=0%3A1&node-id=55-1065&viewport=386%2C282%2C0.14&scaling=scale-down&starting-point-node-id=55%3A1065&show-proto-sidebar=1']
+katakumba.link = 'https://www.figma.com/proto/wlhO5hkJSAffWQpQ0I5eRZ/Design-Stage-1?page-id=0%3A1&node-id=10-85&starting-point-node-id=10%3A85'
+collevio.link = 'https://github.com/vivian423/Collevio'
+nuespace.link = 'https://github.com/vivian423/nuespace'
+memri.link = 'https://www.figma.com/proto/BQa72tyfDyQela9RpBOgbp/memri-app?page-id=0%3A1&node-id=57-2683&viewport=275%2C362%2C0.06&scaling=scale-down&starting-point-node-id=57%3A2683'
+barmaster.link = 'https://www.figma.com/proto/kRQfabIrgG8S15pLqdvwEU/BarMaster---Home-Bartending-App?page-id=0%3A1&node-id=55-1065&viewport=386%2C282%2C0.14&scaling=scale-down&starting-point-node-id=55%3A1065&show-proto-sidebar=1'
 
 # Save Project Data
 katakumba.save
